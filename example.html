@@ -9,12 +9,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
-    <link href="example.css" type="text/css" rel="stylesheet"/>
+    <link href="./scss/main.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>
+<body id="body">
 
 <header>
     <h1>Learning to work with SASS</h1>
+    <a onclick="change_theme_red()" href="#">Red</a>
+    <a onclick="change_theme_blue()" href="#">Blue</a>
 </header>
 
 <article>
@@ -281,6 +283,6 @@
 <footer>
     <h6>&copy; 2019 the entire open-source community</h6>
 </footer>
-
+<script src="./scss/main.js"></script>
 </body>
 </html>
