@@ -1,6 +1,8 @@
 $primary-color: rgb(0, 0, 0);
-$padding: 16px;
+$red-theme: false;
+$padding: if($red-theme == true, 8px, 16px);
 $red-theme-color: red;
+
 
 
 body {
@@ -21,13 +23,8 @@ body {
     box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 
-@mixin theme($red-theme: true) {
-    @if $red-theme {
+@mixin red-theme($red-theme: true) {
+        $red-theme: true;
         color: $red-theme-color;
         background-color: lighten($primary-color, 50%);
-        $padding: 8px;
     }
-    @else {
-        $padding: 16px;
-    }
-}

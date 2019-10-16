@@ -86,9 +86,9 @@ h6 {
 
 .warning {
     @extend .message;
-    background-color: orange;
+    background-color: green;
 }
 
 .red {
-    @include theme(true);
+    @include red-theme(true);
 }
